@@ -1,39 +1,377 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Welcome</title>
-    <style>
-      body{
-       margin: 0; 
-       background-image: url("https://iamthfox.github.io/IMG_0964.JPG");
-       width: 90%;
-      }
-      nav{
-       background-color: rgb(131, 62, 165); 
-      }
-      nav ul{
-       display: inline; 
-      }
-      nav li{
-       font-family: sans-serif;
-       text-decoration: none;
-       color: rgb(255, 255, 255);
-      }
-      .ocean-img{
-       transform: rotate(90deg); 
-      }
-    </style>
-  </head>
+	<head>
+		<title>Welcome</title>
+		<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet"> 
+		<style>
+			*{
+				margin: 0px;
+			}
+			body{
+				background-color: rgb(100, 250, 250);
+			}
+			hr{
+				width: 150px;
+				margin-top: 10px;
+				margin-left: 400px;
+				margin-bottom: 10px;
+				clear: both;
+			}
+			.top-page-img{
+				position: fixed;
+				top: 0px;
+				max-height: 250px;
+				width: 100%;
+				overflow: hidden;
+			}
+			.ocean-img{
+				width: 100%;
+			}
+			.top-page-title{
+				font-family: 'Charm', cursive;
+				font-size: 4em;
+				position: absolute;
+				top: 20px;
+				right: 400px;
+				color: rgb(255, 255, 255);
+			}
+			.section-title{
+				background-color: rgb(181, 166, 122);
+				font-family: sans-serif;
+				padding: 10px;
+				margin-top: 10px;
+				margin-left: 420px;
+				width: 57%;
+			}
+			#background{
+				background-color: rgb(181, 166, 122);
+				font-family: sans-serif;
+				padding: 10px;
+				margin-top: 10px;
+				margin-left: 420px;
+				width: 50%;
+			}
+			#project-title{
+				background-color: rgb(181, 166, 122);
+				font-family: sans-serif;
+				padding: 10px;
+				margin-top: 10px;
+				margin-left: 10px;
+				length: 100%;
+			}
+			#sub{
+				margin-top: 10px;
+				margin-left: 10px;
+				clear: both;
+			}
+			.trivia{
+				margin-left: 10px;
+				clear: both;
+			}
+			.evht{
+				margin-left: 10px;
+				clear: both;
+			}
+			.evht-img{
+				float: left;
+				margin-right: 15px;
+				width: 300px;
+				height: 200px;
+			}
+			.ffds{
+				margin-left: 10px;
+				clear: both;
+			}
+			.ffds-img{
+				float: left;
+				margin-right: 15px;
+				width: 300px;
+				height: 200px;
+			}
+			.memory{
+				margin-left: 10px;
+				margin-bottom: 10px;
+				clear: both;
+			}
+			.memory-img{
+				float: left;
+				margin-right: 15px;
+				width: 300px;
+				height: 250px;
+			}
+			.thirty-one{
+				margin-left: 10px;
+				clear: both;
+			}
+			.thirty-one-img{
+				float: left;
+				margin-right: 15px;
+				width: 300px;
+				height: 200px;
+			}
+			.fields-of-interest-title{
+				background-color: rgb(181, 166, 122);
+				font-family: sans-serif;
+				padding: 10px;
+				margin-top: 10px;
+				margin-left: 1000px;
+				width: 30%;
+			}
+			nav{
+				background-color: rgb(0, 0, 0);
+				width: 100%;
+				padding: 10px;
+				top: 250px;
+				position: fixed;
+			}
+			.nav-links{
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				color: rgb(255, 255, 255);
+			}
+			.nav-links li{
+				list-style: none;
+			}
+			.nav-links a{
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+				font-family: sans-serif;
+				font-weight: bold;
+			}
+			.nav-links a:hover{
+				color: rgb(200, 200, 200);
+			}
+			.content{
+				background-color: rgb(214, 220, 240);
+				padding: 20px;
+				margin-top: 280px;
+				
+			}
+			#content-inner{
+				background-color: rgb(240, 234, 214);
+				border: 5px solid black;
+				margin-top: 10px;
+				overflow: auto;
+				width: 100%;
+			}
+			content-col{
+				float: left:
+				width: 33.3%;
+				padding: 10px;
+			}
+			content-col-2{
+				float: left:
+				width: 10%;
+			}
+			.content-col-inner{
+				float: left;
+				width: 60%;
+			}
+			.my-img{
+				float: left;
+				padding: 10px;
+				margin-right: 10px;
+			}
+			.my-info{
+				margin-left: 10px;
+			}
+			.divider{
+				top: 50px;
+				float: left;
+				border-left: 1px solid black;
+				margin-left: 70px;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				height: 2200px;
+				width: 4%;
+			}
+			.my-interests{
+				margin-top: 10px;
+				margin-left: 0px;
+			}
 
-  <body>
-    <!--
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Resume</li>
-        <li>Projects</li>
-      </ul>
-    </nav>
-    -->
-  </body>
+			#my-contact-title{
+				background-color: rgb(181, 166, 122);
+				font-family: sans-serif;
+				padding: 10px;
+				margin-top: 10px;
+				margin-left: 1000px;
+				width: 30%;
+			}
+			.footer{
+				background-color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
+				text-align: center;
+				<!--width: 100%;-->
+				<!--clear: both;-->
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="top-page-img">
+				<img class="ocean-img" src="ocean.jpg">
+				<div class="top-page-title"><h2>Welcome</h2></div>
+			</div>
+
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#content-inner">About</a></li>
+					<li>|</li>
+					<li><a href="#project-title">Projects</a></li>
+					<li>|</li>
+					<li><a href="#content-inner">Contact</a></li>
+				</ul>
+			</nav>
+
+			
+			<div class="content">
+				<div id="content-inner">
+				
+					<div class="content-col">
+						<div class="content-col-inner">
+							<img class="my-img" src="me.jpg">
+							
+							<h3><div id="background">Background</div></h3><br>
+							<p class="my-info">
+							Hi nice to meet you. My name is Todd. I am a recent computer science graduate
+							from the University of Maine.<br><br>
+							I have always been a big fan of technology since my first Apple IIc+. I especially
+							enjoy using technology to develop web pages and games, as it combines my love of science with my
+							passion for art and design.<br><br>
+							Some of the qualities that have helped me develop my skills as a computer science
+							major have been patience, resourcefulness, perseverence, and time management. Additionally,
+							my background in history has been a tremendous advantage with regard to computer science
+							research and pinpointing the most appropriate online resources to help solve computer-related problems.<br><br>
+							Whether working solo or as part of a team, I always enjoy new challenges as they help me to further
+							hone my skills and learn new things. Furthermore, my curiosity and passion for technology drive me
+							to continually improve myself personally and professionally.<br><br> 
+							</p>
+							
+							<!--<p class="my-projects">-->
+							<div id="project-title"><h3>Projects</h3></div>
+							
+							<div id="sub">
+								<h4>Submarine Demo</h4><br>
+								This project simulates an underwater submarine expedition. I developed this project while employed at the VEMI Lab at the University of Maine. The demo was
+								built using the Unity 3D game engine, and uses Steam's VR plug-in to render the demo into an augmented
+								reality environment. The purpose of the demo was to showcase how real-world movement via external devices (i.e. a joystick) can be mapped to 
+								movements in an augmented reality environment. In other words, when the user moves the joystick to control the submarine, the joystick graphic
+								that is part of the virtual submarine also moves in real-time. Also, the whale is really cool.<br><br>
+							</div>
+							
+							<br>
+							<hr>
+							<br>
+							
+							<div class="trivia">
+								<h4>Trivia Blitz</h4><br>
+								This was a fun trivia game I created, and also the first fully working project I built as a computer science major. It was coded in Python and originally
+								played via the Python console. However, over time I turned this game into a GUI application using Java.<br><br>  
+							</div>
+							
+							<br>
+							<hr>
+							<br>
+							
+							<div class="ffds">
+								<h4>Foot Fault Detection System</h4><br>
+								<img class="ffds-img" src="ffds.png">
+								<p class="project-description">
+								The foot fault detection system was my computer science capstone project (basically, my "senior thesis"). I had
+								the idea to create a foot fault detection system after having watched Serena Williams lose a semifinal US Open match
+								largely due to a contested foot fault call back in 2009. I realized that to eliminate subjective line calls, it would be easier
+								to have a machine make those calls as opposed to a line judge. The foot fault detection system was written in Java in the
+								Eclipse IDE and used the OpenCV computer vision library. The GUI was created with the Java Swing graphics library. The idea behind
+								the system was that a computer or device with the detection system software on it would be positioned on the ground looking down
+								the baseline. The image frame would focus on the upper half of the player's body and the player's foot in relation to the baseline.
+								The end goal is to determine whether the player's foot makes contact with the baseline before the racquet makes contact with the ball.
+								If this case proves true, then the system outputs 'foot fault' to the screen.</p><br>
+								<br>
+							</div>
+							
+							<hr>
+							
+							<div class="evht">
+								<br>
+								<h4>EVHT 300 Web Interface</h4><br>
+								<img class="evht-img" src="evht.png">
+								<p class="project-description">EVHT 300 SAW system. I was charged with creating a web interface
+								that displays real-time SAW (Surface Acoustic Wave) data for my recent internship. For propriety reasons, I cannot show the web interface. 
+								However, this is the GUI of the Python desktop executable that automatically starts and stops the web interface via scripts stored on
+								the web server. The web interface displays temperature, frequency, and power data on Google charts,
+								and I implemented a feature that allows the user to take a screenshot of the charts, display the all the data
+								points from the charts, and download the graph images and data points to a desktop file. This project also gave
+								me experience working with and configuring Apache web server on Linux.</p>	
+							</div>
+							
+							<div class="memory">
+								<br><br>
+								<hr>
+								<br>
+								<h4>Memory</h4><br>
+								<img class="memory-img" src="memory.png">
+								<p class="project-description">Classic game of memory. This was made in Java using the Java Swing graphics library.
+								I made this game just for fun and to improve my Java skills. I have considered turning this into a game
+								played over a network. </p><br><br><br>
+							</div>
+
+							
+							<div class="thirty-one">
+								<br>
+								<hr>
+								<br>
+								<h4>Thirty-One</h4><br>
+								<img class="thirty-one-img" src="ThirtyOneWireframe.png">
+								<p class="project-description">A card game I started to develop in my free time in Java toward
+								the end of the semester. The image is the wireframe layout of the game.</p><br><br><br>
+								<br>
+							</div>
+							
+							<br>
+						</div>
+					</div>
+					
+					<div class="content-col">
+						<div class="divider"></div>
+					</div>
+					
+					
+					<div class="content-col">
+						<div class="my-interests">
+							<p>
+							<div class="fields-of-interest-title"><h3>Fields of Interest</h3></div>
+							<br>
+								<ul class="fields-of-interest-list">
+									<li>Web development</li><br>
+									<li>Game design</li><br>
+									<li>General programming</li><br>
+									<li>Model and simulation design and development</li><br>
+									<li>Augmented intelligence</li><br>
+									<li>Cybersecurity</li>
+								</ul>
+							<br>
+							</div>
+						</div>
+						
+						<div class="my-contact">
+							<p>
+							<div id="my-contact-title"><h3>Contact</h3></div>
+								<br>
+								<h3>thfox83@gmail.com</h3>
+								<br>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!--<div class="footer">Copyright 2019</div>-->
+					
+				</div>
+			</div>
+
+		</div>
+	</body>
 </html>
